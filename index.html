@@ -11,8 +11,6 @@
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif:ital@0;1&display=swap"
       rel="stylesheet"
@@ -45,7 +43,7 @@
         </p>
         <img
           src="./images/inside_coffee_shop.png"
-          alt=""
+          alt="coffee shop image"
           class="header__image"
         />
         <div class="header__footer">
@@ -98,7 +96,7 @@
           <h2 class="reservation__title">Book a table</h2>
           <form action="reservation" class="reservation__form form">
             <fieldset class="form__fieldset">
-              <label for="name" class="form__label"
+              <label required for="name" class="form__label"
                 >Name *
                 <input
                   type="text"
@@ -107,7 +105,7 @@
                   id="name"
                 />
               </label>
-              <label for="number_of_guests" class="form__label"
+              <label required for="number_of_guests" class="form__label"
                 >Number of guests *
                 <input
                   type="number"
@@ -116,7 +114,7 @@
                   id="number_of_guests"
                 />
               </label>
-              <label for="Date&time" class="form__label"
+              <label required for="Date&time" class="form__label"
                 >Date & time *
                 <input
                   type="datetime-local"
@@ -124,7 +122,7 @@
                   id="Date&time"
                 />
               </label>
-              <label for="email" class="form__label"
+              <label required for="email" class="form__label"
                 >Your email *
                 <input
                   type="email"
@@ -134,8 +132,12 @@
                 />
               </label>
             </fieldset>
-            <button class="form__button">Book a table</button>
-            <label for="checkbox" class="form__label form__label_type_checkbox">
+            <button class="form__button" type="submit">Book a table</button>
+            <label
+              required
+              for="checkbox"
+              class="form__label form__label_type_checkbox"
+            >
               <input type="checkbox" class="form__checkbox" id="checkbox" /> I
               agree with terms of use
             </label>
@@ -241,25 +243,25 @@
             src="./images/logo_coffeeshop_light.svg"
             alt="Trple Peaks Espresso"
           />
-          <li class="footer__list">
+          <ul class="footer__list">
             <h3 class="footer__social-heading">Social media</h3>
-            <ui class="footer__list-item"
-              ><img
+            <li class="footer__list-item">
+              <img
                 class="footer__social-icon"
                 src="./images/facebook_white.svg"
                 alt="facebook"
               />
-              <p class="footer__social-link">Facebook</p></ui
-            >
-            <ui class="footer__list-item"
-              ><img
+              <p class="footer__social-link">Facebook</p>
+            </li>
+            <li class="footer__list-item">
+              <img
                 class="footer__social-icon"
                 src="./images/instagram_white.svg"
-                alt=""
+                alt="instagram"
               />
-              <p class="footer__social-link">Instagram</p></ui
-            >
-          </li>
+              <p class="footer__social-link">Instagram</p>
+            </li>
+          </ul>
         </div>
         <p class="footer__copyright">©2024 Aaron Snyder</p>
       </footer>

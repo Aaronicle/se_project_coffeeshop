@@ -1,6 +1,6 @@
 .footer {
   background: linear-gradient(180deg, #0a2850 0%, #071931 100%);
-  padding: 80px 60px 80px 60px;
+  padding: 60px 80px;
 }
 
 .footer__content {
@@ -41,6 +41,10 @@
   margin-bottom: 16px;
 }
 
+.footer__list-item:last-child {
+  margin-bottom: 0;
+}
+
 .footer__social-icon {
   max-height: 16px;
   max-width: 16px;
@@ -60,6 +64,5 @@
   line-height: 20px;
   color: #fff;
   padding-top: 108px;
-  padding-bottom: 60px;
   margin: 0;
 }
