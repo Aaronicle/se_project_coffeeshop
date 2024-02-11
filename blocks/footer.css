@@ -28,7 +28,6 @@
   font-family: "Inter", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
-  color: #fff;
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -49,10 +48,14 @@
 .footer__social-icon {
   max-height: 16px;
   max-width: 16px;
+  position: relative;
+  top: 2px;
 }
 
 .footer__social-link {
   margin: 0;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .footer__social-link:hover {

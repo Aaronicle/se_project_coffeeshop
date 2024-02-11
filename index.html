@@ -114,7 +114,6 @@
                   class="form__input"
                   placeholder="1-8"
                   id="number_of_guests"
-                  required
                 />
               </label>
               <label for="Date&time" class="form__label"
@@ -124,7 +123,6 @@
                   type="datetime-local"
                   class="form__input"
                   id="Date&time"
-                  required
                 />
               </label>
               <label for="email" class="form__label"
@@ -250,25 +248,27 @@
             src="./images/logo_coffeeshop_light.svg"
             alt="Trple Peaks Espresso"
           />
-          <ul class="footer__list">
-            <div class="footer__social-heading">Social media</div>
-            <li class="footer__list-item">
-              <img
-                class="footer__social-icon"
-                src="./images/facebook_white.svg"
-                alt="facebook"
-              />
-              <a class="footer__social-link">Facebook</a>
-            </li>
-            <li class="footer__list-item">
-              <img
-                class="footer__social-icon"
-                src="./images/instagram_white.svg"
-                alt="instagram"
-              />
-              <a class="footer__social-link">Instagram</a>
-            </li>
-          </ul>
+          <div>
+            <h3 class="footer__social-heading">Social media</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <img
+                  class="footer__social-icon"
+                  src="./images/facebook_white.svg"
+                  alt="facebook"
+                />
+                <a href="#" class="footer__social-link">Facebook</a>
+              </li>
+              <li class="footer__list-item">
+                <img
+                  class="footer__social-icon"
+                  src="./images/instagram_white.svg"
+                  alt="instagram"
+                />
+                <a href="#" class="footer__social-link">Instagram</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <p class="footer__copyright">©2024 Aaron Snyder</p>
       </footer>
